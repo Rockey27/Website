@@ -1,17 +1,29 @@
-img {
-    transition: transform .2s;
-    border: 10px solid #AQUA;
+.menu{
+position: fixed;
+background: white;
+    width: 100px;
+    margin-top: 0px;
+    top: 0px;
+    z-index: 10px;
+    
 }
-
-img:hover {
-    transform: scale(0.9);
+a {
+ text-decoration: underline;
+    color: aqua;
+    text-shadow: 2px 2px gainsboro;
 }
-
-img {
-    transition: transform .2s;
-    border: 10px solid #AQUA;
+.links{
+display: inline;
+    padding-left: 33px;
+    padding-right: 25px;
+    font-family: fantasy;
+    font-size: 20px;
 }
-
-img:hover {
-    transform: scale(0.9);
+.links{
+font-size: 25px;
+    text-decoration: underline;
+}
+#contact iframe
+{
+ width: 100px;   
 }
