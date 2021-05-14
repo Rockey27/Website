@@ -2,55 +2,160 @@
 <html lang="en">
 
 <head>
-    <title>MY Webpage</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHOTO GALLERY</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
-<html>
 
 <body>
-    <ul class="menu">
-        <li class="link"><a href="#bio">About</a> </li>
-        <li class="link"><a href="#References">My favorite player</a></li>
-        <li class="link"><a href="#MyInspiration">Inspiration</a></li>
-        <li class="link"><a href="#contact">Contact</a></li>
-    </ul>
+    <h3>
+    </h3>
+    <div style="position:sticky;top:0;z-index:99999; background-color:black;">
+        <div class="menu1" id="myNavbar1">
+            <span><a href="#home">Home</a></span>&nbsp;
+            <span><a href="#Grids">Grid view</a></span>&nbsp;
+            <span><a href="#slides">Slide view</a></span>&nbsp;
+            <span><a href="#contact">Contact</a></span>&nbsp;
+        </div>
+    </div>
+    <div class="container">
+        <section id="home">
+            <div class="page-header">
+                <h2 class="text-capitalize">avengers assemble</h2>
+                <img id="img1" src="https://snehalbsawant.github.io/ADVC62Project/home.gif" class="img-responsive">
+            </div>
+        </section>
+        <hr style="width: 100%;">
+        <section id="Grids">
+            <h2> Grid gallery</h2>
+            <br>
+            <script src=""></script>
+            <div class="row">
+                <img class="img2" src="https://snehalbsawant.github.io/ADVC62Project/capAm.jpg">
+                <img class="img2" src="https://snehalbsawant.github.io/ADVC62Project/BP.jpg">
+                <img class="img2" src="https://snehalbsawant.github.io/ADVC62Project/hulk.jpg">
+                <img class="img2" src="https://snehalbsawant.github.io/ADVC62Project/Ironman.jpg">
+                <br><br>
+            </div>
+            <div class="row">
+                <img class="img2" src="https://snehalbsawant.github.io/ADVC62Project/thanos.jpg">
+                <img class="img2" src="https://snehalbsawant.github.io/ADVC62Project/thor.jpg">
+                <img class="img2" src="https://snehalbsawant.github.io/ADVC62Project/gamora.jpg">
+                <img class="img2" src="https://snehalbsawant.github.io/ADVC62Project/scarlet.jpg">
+            </div>
+        </section>
+        <br>
+        <br>
+        <hr style="width: 100%;">
 
-    <section id="welcome"> <img src="https://previews.123rf.com/images/lumyaisweet/lumyaisweet1803/lumyaisweet180300037/97047937-cricket-logo-modern-sport-emblem-vector-illustration.jpg" class="profile">
-        <h1>My Favorite hobby is <br><span id="myname">CRICKET</span></h1>
-        <h2>I love playing cricket</h2>
-    </section>
-    <section id="bio">
-        <h1>About</h1>
-        <div class="line"></div>
-        <p class="para">Cricket is a very famous game. It can be played by men, women and children of all ages. It is an outdoor game which requires a bat, ball and stumps.It is usually played on a field by two teams and the team that scores more runs, wins the game.Cricket is a bat-and-ball game played between two teams of eleven players on a field at the centre of which is a 22-yard (20-metre) pitch with a wicket at each end, each comprising two bails balanced on three stumps. The earliest reference to cricket is in South East England in the mid-16th century. </p>
-    </section>
+        <!-- Left and right controls -->
+        <section id="slides">
+            <h2>Sliding gallary</h2>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                    <li data-target="#myCarousel" data-slide-to="5"></li>
+                    <li data-target="#myCarousel" data-slide-to="6"></li>
+                    <li data-target="#myCarousel" data-slide-to="7"></li>
 
-    <section id="References">
-        <h1>Here is my Favourite player and reviews on him</h1>
-        <div class="line"></div> <iframe width="700" height="700" src="https://freelymagazine.com/2018/02/14/book-review-i-am-mahala/#:~:text=%E2%80%9CEducation%20is%20education.&text=The%20near%2Dfatal%20attack%20gave,Prize%20winner%20of%20all%20times."> </iframe>
-        <div class="jj"> <a href="https://en.wikipedia.org/wiki/Virat_Kohli" target="_blank">Click here to view my favorite player of all time </a> </div>
-    </section>
-    <section id="MyInspiration">
-        <h1>CLICK ON THE PICTURE TO VIEW MY INSPIRATION</h1>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
 
-        <span>
-            <a href="https://magazine.xpert.tv/the-inspirational-story-of-mahendra-singh-dhoni/#:~:text=%E2%80%9CDHONI%2DTHE%20YOUTH%20INSPIRATION%E2%80%9D,Mahi%E2%80%9D%20broke%20the%20glass%20ceiling.">
-                <img id="picture1" src="https://ss.thgim.com/photos/article32642307.ece/alternates/FREE_380/Dhoni-Deepakjpg">
+                    <div class="item active">
+                        <img class="img-responsive" src="https://snehalbsawant.github.io/ADVC62Project/capAm.jpg" alt="Captain America" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h3>Captain America</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="img-responsive" src="https://snehalbsawant.github.io/ADVC62Project/BP.jpg" alt="Black Panther" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h3>Black Panther</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="img-responsive" src="https://snehalbsawant.github.io/ADVC62Project/hulk.jpg" alt="Hulk" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h3>Hulk</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="img-responsive" src="https://snehalbsawant.github.io/ADVC62Project/Ironman.jpg" alt="Ironman" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h3>Ironman</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="img-responsive" src="https://snehalbsawant.github.io/ADVC62Project/thanos.jpg" alt="Thanos" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h3>Thanos</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="img-responsive" src="https://snehalbsawant.github.io/ADVC62Project/thor.jpg" alt="Thor" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h3>Thor</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="img-responsive" src="https://snehalbsawant.github.io/ADVC62Project/gamora.jpg" alt="Gamora" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h3>Gamora</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="img-responsive" src="https://snehalbsawant.github.io/ADVC62Project/scarlet.jpg" alt="Scarlet" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h3>Scarlet</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+        <hr style="width: 100%;">
+        <section id="contact">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15078.353856082635!2d72.8906491!3d19.1257017!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xacf72f56793d190a!2sWHITEHAT%20EDUCATION%20TECHNOLOGY%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1573468987088!5m2!1sen!2sin" height="450" frameborder="0" allowfullscreen=""></iframe>
 
-            </a>
-        </span>
-        <span>
-            <a href="https://www.timesnownews.com/sports/article/why-the-rohit-sharma-story-is-an-inspiration-to-aspiring-young-cricketers/584246#:~:text=What%20makes%20his%20journey%20so%20inspiring%3F,he%20joined%20a%20cricket%20camp." target="_blank">
+            <hr style="width: 100%;">
+            <div class="contact_1">
 
-                <img id="p" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9RXqFasvZZLNhZ9lpePwLvAtOavSFb1rwwCeC50mvDlOjJnphlpNZlBq5yvWRusCxbzg&usqp=CAU">
+                <a href="mailto:my@gmail.com?Subject=Hi">
+                    <h5><i class="fa fa-envelope"></i>&nbsp;&nbsp;mygmailid@gmail.com</h5>
+                </a>
 
-            </a>
-        </span>
+                <a href="#">
+                    <h5><i class="fa fa-instagram"></i>&nbsp;&nbsp;myinstagramid</h5>
+                </a>
+            </div>
 
-    </section>
-    <section id="contact"> <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15078.353856082635!2d72.8906491!3d19.1257017!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xacf72f56793d190a!2sWHITEHAT%20EDUCATION%20TECHNOLOGY%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1573468987088!5m2!1sen!2sin" height="450" frameborder="0" allowfullscreen=""></iframe>
-        <div class="contact_1"> <a href="mailto:someone@example.com?Subject=Hello"> <i class="fa fa-envelope"></i>&nbsp;&nbsp;<h3>mygmailid@gmail.com</h3> </a> <br> <br> <a href="#"> <i class="fa fa-instagram"></i>&nbsp;&nbsp;<h3>myinstagramid</h3> </a> </div>
-    </section>
+        </section>
+    </div>
 </body>
 
 </html>
