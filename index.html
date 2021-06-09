@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <nav class="navbar-inverse my_nav_bar" style="position:sticky;top:0;z- index:99999">
+    <nav class="navbar-inverse" style="position:sticky;top:0;z- index:99999">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                 <span class="icon-bar"></span>
@@ -25,20 +25,19 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li class="links"> <a href="#welcome"></a>Campus Life</li>
-                <li class="links"> <a href="#videos"></a>Achievements</li>
-                <li class="links"> <a href="#work"></a>Whast'sNew</li>
-                <li class="links"> <a href="#writings"></a>Alumni</li>
-                <li class="links"> <a href="#contact"></a>Contact</li>
+                <li> <a href="#campuslife">Campus Life </a></li>
+                <li> <a href="#new">Whast'sNew </a></li>
+                <li> <a href="#alumni">Alumni </a></li>
+                <li> <a href="#contact">Contact </a></li>
             </ul>
         </div>
     </nav>
     <div class="announcement">
-        <marquee> id="marqueeStyle" onmouseover="this.start();"onmouseout ="this.start();">
+        <marquee id="marqueeStyle" onmouseover="this.start();"onmouseout ="this.start();">
             *** Feel feel to ask queries on school@gmail.com
         </marquee>
     </div>
-    <iframe width="853" height="480" src="https://www.youtube.com/embed/gtMcv6W6-Lw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe id="video" src="https://www.youtube.com/embed/gtMcv6W6-Lw"></iframe>
 
     <div class="container">
         <div class="page-header" id="campuslife">
@@ -51,7 +50,7 @@
                     <h5 class="text-success text-left text-capitalize">Was established in 1978</h5>
                     <p class="text-muted text-left">Wrie something about the mentioned</p>
                 </div>
-                <div class="row">
+
                     <div class="travel_mainDiv">
                         <img class="img-responsive" src="https://149536876.v2.pressablecdn.com/wp-content/uploads/2018/03/careers-school-librarian.jpg">
                         <h4 class="text-capitalize"><kbd>school library</kbd></h4>
@@ -59,7 +58,7 @@
                         <h5 class="text-success text-left text-capitalize">Was build at 1980 </h5>
                         <p class="text-muted text-left">Wrie something about the mentioned</p>
 
-                        <div class="row">
+                </div>
                             <div class="travel_mainDiv">
                                 <img class="img-responsive" src="https://usa.yamaha.com/files/20180508_groveshighschool_photos01_4096x2304_251fde1c1ec07994486f7277c2cf61c7.jpg"> <kbd>school auditorium</kbd></h4>
                                 <hr>
@@ -69,24 +68,18 @@
                         </div>
                     </div>
 
-                    <div class="container">
-                        <div class="page-header col-lg-12col-md-12 col-sm-12 col-xs-12" id="contactUS">
-
-                            <h2 class="text-capitalize ">ContactUS</h2>
-                        </div>
-
                         <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12" id="new">
-                            <h2 class="text-capitalize">Whast`new</h2>
+                            <h2 class="text-capitalize">What`s new</h2>
                         </div>
 
                         <ul class="list-group">
 
-                            <li class="list-group-itemlist-group-item-success col-lg-12 col-md-12 col-sm-12 col-xs-12 eviroment_li"></li>
+                            <li class="list-group-item list-group-item-success col-lg-12 col-md-12 col-sm-12 col-xs-12 eviroment_li">
                             <h4>New School Canteen</h4>
                             <img src="https://kmrschool.com/wp-content/uploads/2020/04/canteen1.jpg" class="img-responsive col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                            <p class="list-group-item-text col-lg-12 col-md-12 col-sm-12 col-xs-12">The canteen is a service that the school offers to all families who need their children to be attended during lunchtime, understanding this service, apart from a space to eat, as a complement of the educational activity, a space where we work for the integral education of our students at cultural, social, leisure and ...</p>
+                                <p class="list-group-item-text col-lg-12 col-md-12 col-sm-12 col-xs-12">The canteen is a service that the school offers to all families who need their children to be attended during lunchtime, understanding this service, apart from a space to eat, as a complement of the educational activity, a space where we work for the integral education of our students at cultural, social, leisure and ...</p> </li>
 
-                            <li class="list-group-itemlist-group-item-success col-lg-12 col-md-12 col-sm-12 col-xs-12 eviroment_li"></li>
+                            <li class="list-group-item list-group-item-success col-lg-12 col-md-12 col-sm-12 col-xs-12 eviroment_li">
                             <h4>Implemented Online Attendance Maganement System</h4>
                             <img src="https://5.imimg.com/data5/ZA/SJ/QC/SELLER-7950336/rfid-smart-attendance-for-school-500x500.jpg" class="img-responsive col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
                             <p> class="list-group-item-text col-lg-12 col-md-12 col-sm-12 col-xs-12">1.Attendance Management keeps track of your employee hours. It is the system you use to document the time your employees work and the time they take off. Attendance Management can be done by recording employee hours on paper, using spreadsheets, punching time cards, or using online attendance software for your company. >
@@ -96,23 +89,126 @@
                                 Economics is the study of how to eliminate scarcity associated with the goods and services we produce.
                                 <br>
                                 3.Productivity / Efficiency
-                                Productivity is the state of being able to create, particularly at a high quality and quick speed. An example of productivity is being able to make top notch school projects in a limited amount of time. An example of productivity is how quickly a toy factory is able to produce toys.
+                                Productivity is the state of being able to create, particularly at a high quality and quick speed. An example of productivity is being able to make top notch school projects in a limited amount of time. An example of productivity is how quickly a toy factory is able to produce toys.</p> </li>
                         </ul>
 
-                        <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <h2 class="text-capitalize"></h2>
+                        <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12" id="alumni">
+                            <h2 class="text-capitalize">our alumni</h2>
                         </div>
 
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="alumniList" data-toggle="modal" data-target="#school_alumni1">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Mukesh_Ambani_1.jpg" class="img-responsive">
+                            <hr>
+                            <p class="text-primary">Mukesh Ambani</p>
+                        </div>
 
+                        <!-- Modal -->
+                        <div class="modal fade" id="school_alumni1">
+                            <div class="modal-dialog">
+                            <!--ModalContent -->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Mukesh Ambani</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Mukesh_Ambani_1.jpg" class="img-responsive img_modal">
+                                    <p class="p_modal">HE IS A BUSINESSMAN<br>
+                                        <a href="https://en.wikipedia.org/wiki/Mukesh_Ambani"><b>TO KNOW MORE</b></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                       
 
+                        
+
+                        <div class="col-lg-12col-md-12 col-sm-12 col-xs-12" id="alumniList" data-toggle="modal" data-target="#school_alumni1">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Mother_Teresa_1.jpg" class="img-responsive">
+                            <hr>
+                            <p class="text-primary">Mother Teresa</p>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="school_alumni1">
+                            <div class="modal-dialog">
+                            <!--ModalContent -->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Mother Teresa</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Mother_Teresa_1.jpg" class="img-responsive img_modal">
+                                    <p class="p_modal">SHE IS A Nun and missionary <br>
+                                        <a href="https://en.wikipedia.org/wiki/Mother_Teresa"><b>TO KNOW MORE</b></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+
+                        <div class="col-lg-12col-md-12 col-sm-12 col-xs-12" id="alumniList" data-toggle="modal" data-target="#school_alumni1">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/A._P._J._Abdul_Kalam.jpg/1200px-A._P._J._Abdul_Kalam.jpg" class="img-responsive">
+                            <hr>
+                            <p class="text-primary">Abdul Kalam</p>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="school_alumni1">
+                            <div class="modal-dialog">
+                            <!--ModalContent -->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Abdul Kalam</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/A._P._J._Abdul_Kalam.jpg/1200px-A._P._J._Abdul_Kalam.jpg" class="img-responsive img_modal">
+                                    <p class="p_modal">HE IS A SCIENTIST <br>
+                                        <br>
+                                        <a href="https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam"><b>TO KNOW MORE</b></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+
+                        <div class="col-lg-12col-md-12 col-sm-12 col-xs-12" id="alumniList" data-toggle="modal" data-target="#school_alumni1">
+                            <img src="https://i.guim.co.uk/img/media/5b4590f6b3866163a6065d249b426eed1115555e/0_214_2200_1321/master/2200.jpg?width=445&quality=45&auto=format&fit=max&dpr=2&s=0194a00c83c5a6e0024e78fb50cf719b" class="img-responsive">
+                            <hr>
+                            <p class="text-primary">Sachin Tendulkar</p>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="school_alumni1">
+                          <div class="modal-dialog">  
+                            <!--ModalContent -->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Sachin Tendulkar</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="https://i.guim.co.uk/img/media/5b4590f6b3866163a6065d249b426eed1115555e/0_214_2200_1321/master/2200.jpg?width=445&quality=45&auto=format&fit=max&dpr=2&s=0194a00c83c5a6e0024e78fb50cf719b" class="img-responsive img_modal">
+                                    <p class="p_modal">HE IS A CRICKETER <br>
+                                        <br>
+                                        <a href="https://en.wikipedia.org/wiki/Sachin_Tendulkar"><b>TO KNOW MORE</b></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                         <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12" id="contact">
+                            <h2 class="text-capitalize">contact</h2>
+                        </div>   
                         <div id="map">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15078.353856082635!2d72.8906491!3d19.1257017!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xacf72f56793d190a!2sWHITEHAT%20EDUCATION%20TECHNOLOGY%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1573468987088!5m2!1sen!2sin" height="450" frameborder="0" allowfullscreen=""></iframe>
                         </div>
                         <div id="details">
-                            <img src="https://img1.wsimg.com/isteam/ip/406373f5-cc1f-4e45-95b7-ea346ddc659c/School%20Building.jpg">
-
+                            
                             <img src="https://kidsadda.com/wp-content/uploads/2014/10/if-i-were-a-principal-of-my-school.jpg" class="img-resoponsive img-circle col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                            <h3>Princeipal Name:</h3>
+                            <h3>Principal Name:</h3>
                             <h4>Hema Chennupaty</h4>
                             <div class="contact_1">
                                 <a href="mailto:school@gmail.com">
@@ -129,10 +225,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
-
-            </div>
-        </div>
+    <div id="footer"></div>
 </body>
 
 </html>
