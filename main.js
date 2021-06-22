@@ -1,15 +1,18 @@
-var i = 0;
-function update()
-{
+menu_list_array = ["Veg Margherita Pizza", "Peppy Paneer Pizza", " Chicken Dominator Pizza", "CHICKEN FIESTA Pizza", "Indi Chicken Tikka Pizza", "PEPPER BARBECUE CHICKEN Pizza", "PEPPER BARBECUE CHICKEN Pizza", "PEPPER BARBECUE & ONION Pizza", "Farm House Pizza", 
+                    ];
 
-    i++;
-    var numbers_of_family__member_in_array = 3
-    if(i > numbers_of_family__member_in_array)
-{
-    i = 0;
+function getmenu(){
+var htmldata;
+//Complete the code
 }
-var updateImage = images[i];
-var updateName = names[i];
-document.getElementById("family_member_image").src = updateImage;
-document.getElementById("family_member_name").innerHTML = updateName;
+
+function add_item(){
+var htmldata;
+var item=document.getElementById("add_item").value;
+//Complete the code
+
+}
+
+function add_top(){
+//Complete the code
 }
