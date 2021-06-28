@@ -1,32 +1,42 @@
-menu_list_array = ["Veg Margherita Pizza","Chicken Tandoori Pizza","Chicken Supreme Pizza","Paneer Tikka Pizza","Deluxe Veggie Pizza","Veg Extravaganza Pizza"];
+function show(){
+    var GuestName = document.getElementById(name1).display;
     
-    function getmenu(){
-        var htmldata;
-        htmldata="<ol class='menulist'>"
-        menu_list_array.sort();
-        for(var i=0;i<menu_list_array.length;i++){
-            htmldata=htmldata+'<li>' + menu_list_array[i] + '</li>'
-        }
-         htmldata=htmldata+"</ol>"
-         document.getElementById("display_menu").innerHTML = htmldata;
-    }
 
-    function add_item(){
-        var htmldata;
-        var item=document.getElementById("add_item").value;
-        menu_list_array.sort();
-        htmldata="<section class='cards'>"
-        for(var i=0;i<menu_list_array.length;i++){
-
-            htmldata=htmldata+'<div class="card">' +'<img src="images/pizzaImg.png"/>' + menu_list_array[i] + '</div>'
-        }
-          htmldata=htmldata+"</section>"
-         document.getElementById("display_addedmenu").innerHTML = htmldata;
-		
-    }
-
-function add_top(){
-	var item=document.getElementById("add_item").value;
-    menu_list_array.push(item);
-	add_item();
 }
+function sortedlist() 
+{
+    name_of_the_student_array.sort();
+    console.log(name_of_the_student_array);
+    var display_student_array_sorting = [];
+
+    var length_of_name_of_students_array = name_of_the_student_array.length;
+    console.log(length_of_name_of_students_array);
+ 
+    for (var k = 0; k < length_of_name_of_students_array; k++)
+    {
+        display_student_array_sorting.push("<h4> NAME - "+ name_of_the_student_array[k] + "</h4>");
+        console.log(display_student_array_sorting);
+
+
+    }
+
+
+
+names_of_people.sort();
+
+function searching()
+{
+    var s= document.getElementById("s1").value;
+    var found=0;
+    var j;
+    for(j=0; j<names_of_people.length; j++)
+    {
+
+        if(s==names_of_people[j]){
+            found=found+1;
+        }
+       
+    }
+    document.getElementById("p2").innerHTML="name found "+ "times";
+    console.log("found name "+found+" time/s");
+          
