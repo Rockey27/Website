@@ -1,57 +1,29 @@
+<<!DOCTYPE html>
 <html>
 <head>
-   <title>GUEST LIST </title>
-   <link rel="stylesheet" type="text/css" href="style.css">
- <script src="main.js"></script>
+	<title>LET-CHAT-WEB-APP</title>
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="let_chat_web_app.js"></script>
 </head>
 <body>
-    <center>
-                
-        <h1>GUEST LIST</h1>
-        <div>
-           <input type="text" placeholder="Name of the Student" id="name1">
-            <br>
-        </div>
-        <button onclick="submit()" id="submit">
-        Submit
-        </button>
-      
-        <h2>GUEST LIST</h2>
-       
-            <input type="text" placeholder="Name of the Student" id="student_2">
-            <br>
-            <button onclick="show()" id="show">
-                SHOW
-            </button>
-
-            <input type="text" placeholder="Name of the Student" id="student_3">
-            <br>
-            <button onclick="sort()" id="sortedlist">
-                SORTED LIST
-                </button>
-                
-            <input type="text" placeholder="Name of the Student" id="student_2">
-            <br>
-            <button onclick="submit()" id="submit">
-                SEARCH
-                </button>
-
-
-            
-
-            
-
-        
-        </div>
-
-        <button onclick="sort()" id="sort">
-            Sort
-    </button>
-    <br>
-    </center>
-
-    <script type="text/javascript"> 
-     
-    </script>
+<center>
+	<h1 class="header">	
+		Kwitter	<sup>
+	<img src="https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg">
+	</sup>
+</h1>
+	
+		  <label >User Name:</label>
+          <input type="text" id="user_name" class="form-control" placeholder="User Name">
+		</div>
+		<button id="login_button" class="btn btn-primary" onclick="addUser()">Log in</button>
+		<br><br>
+	</div>
+</center>
 </body>
 </html>
